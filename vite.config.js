@@ -5,9 +5,7 @@ import { handleApiRequest } from './server/apiRouter.js';
 
 // Tải biến môi trường từ .env
 try {
-  // @ts-ignore
   if (typeof process.loadEnvFile === 'function') {
-    // @ts-ignore
     process.loadEnvFile();
   }
 } catch (e) {}
